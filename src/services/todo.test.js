@@ -8,3 +8,7 @@ test('should return true', () => {
 test('should return true 2', () => {
     expect(true).toBeTruthy();
 });
+
+test('should return true 3', () => {
+    expect(true).toBeTruthy();
+});
