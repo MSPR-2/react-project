@@ -17,5 +17,5 @@ $ yarn install
 
 Run it
 ```bash
-$ yarn start test
+$ yarn start
 ```
