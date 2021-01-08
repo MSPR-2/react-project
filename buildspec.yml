@@ -14,3 +14,10 @@ artifacts:
     - '**/*'
   discard-paths: no
   base-directory: build
+
+reports:
+    jest_reports:
+        files:
+            - 'report-jest'
+        file-format: JUNITXML
+        base-directory: 'reports'
