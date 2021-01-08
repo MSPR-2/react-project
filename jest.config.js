@@ -1,9 +1,15 @@
 module.exports = {
+    collectCoverage: true,
+    moduleFileExtensions: ['ts', 'js', 'node', 'jsx', 'json'],
+    transform: {
+        "^.+\\.js?$": "babel-jest"
+    },
     reporters: [
         'default',
         [ 'jest-junit', {
-            outputDirectory: 'reports',
-                outputName: 'report-jest',
-        } ]
+            outputDirectory: '.test',
+                outputName: 'junit.xml',
+            }
+        ]
     ]
 };

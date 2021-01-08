@@ -1,10 +1,9 @@
-import React from 'react';
-import { getAll, getItemById, updateStatus } from './todo';
+describe('Todo test', () => {
+    test('should return true', () => {
+        expect(true).toBeTruthy();
+    });
 
-test('should return true', () => {
-    expect(true).toBeTruthy();
-});
-
-test('should return true', () => {
-    expect(true).toBeTruthy();
+    test('should return true', () => {
+        expect(true).toBeTruthy();
+    });
 });
