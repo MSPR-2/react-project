@@ -1,0 +1,66 @@
+{
+  "id": "edcd8997-4d38-47be-97ac-172dd075b068",
+  "version": "2.0",
+  "name": "FirstTestSelenium",
+  "url": "http://codebuildmspr2cicd.s3-website.eu-west-3.amazonaws.com",
+  "tests": [{
+    "id": "9f8f5078-2be0-458e-88de-a80b30e566b6",
+    "name": "FirstTest",
+    "commands": [{
+      "id": "4d4d3ebf-1368-44c9-bd85-891ab4352563",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3e9b6f2-eca8-48cd-94e4-e41c6d5f3b69",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebfd1083-bf08-45e5-812f-0cdbe2337c15",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='Learn Selenium']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/header/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Learn Selenium"
+    }, {
+      "id": "fbeccf53-6d66-456e-931e-3f34e1729563",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='Learn Selenium']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/header/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "494d605e-d657-4f5a-a295-add4a1b7db27",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li.todo-item:nth-last-child(1) label",
+      "targets": [],
+      "value": "Learn Selenium"
+    }]
+  }],
+  "suites": [{
+    "id": "a6ac73af-34d9-478c-95d1-4a77bb243b66",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9f8f5078-2be0-458e-88de-a80b30e566b6"]
+  }],
+  "urls": ["http://codebuildmspr2cicd.s3-website.eu-west-3.amazonaws.com/"],
+  "plugins": []
+}
