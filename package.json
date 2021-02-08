@@ -2,7 +2,7 @@
   "name": "react-todo-app",
   "version": "0.1.0",
   "private": true,
-  "jest": {
+  "jest": { 
     "verbose": true
   },
   "devDependencies": {
