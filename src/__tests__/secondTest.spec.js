@@ -4,6 +4,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 const chrome = require('selenium-webdriver/chrome');
 const path = require('chromedriver').path;
+jest.setTimeout(30000)
 
 const screen = {
   width: 640,
@@ -14,7 +15,7 @@ const service = new chrome.ServiceBuilder(path).build();
 chrome.setDefaultService(service);
 
 describe('CompletTest', function() {
-
+ 
   let driver
   let vars
   
