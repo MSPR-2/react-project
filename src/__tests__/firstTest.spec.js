@@ -14,7 +14,7 @@ const service = new chrome.ServiceBuilder(path).build();
 chrome.setDefaultService(service);
 
 describe('addATask', function() {
-
+  jest.setTimeout(30000)
   let driver
   let vars
   
