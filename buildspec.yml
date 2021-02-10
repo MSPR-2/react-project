@@ -3,7 +3,7 @@ phases:
   pre_build:
     commands:
       - yarn
-      - npm install --save-dev jest jest-environment-webdriver babel-jest regenerator-runtime selenium-webdriver@3.x chromedriver geckodriver
+      - npm install --save-dev jest babel-jest regenerator-runtime selenium-webdriver@3.x chromedriver
       - yarn test
   build:
    commands:
