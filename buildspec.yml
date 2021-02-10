@@ -3,12 +3,11 @@ phases:
   pre_build:
     commands:
       - yarn
-      - npm install --save-dev jest
-      - npm install --save-dev babel-jest regenerator-runtime
+      - npm install --save-dev jest babel-jest regenerator-runtime selenium-webdriver@3.x chromedriver
       - yarn test
   build:
    commands:
-      - yarn build
+      - yarn build --prod
 
 reports:
     jest_reports:
